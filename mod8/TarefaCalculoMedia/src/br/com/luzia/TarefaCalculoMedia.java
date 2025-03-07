@@ -18,13 +18,17 @@ public class TarefaCalculoMedia {
 
     private static void notaAluno() {
         Random randomNum = new Random();
-        int sem1 = randomNum.nextInt(10) + 1;
-        int sem2 = randomNum.nextInt(10) + 1;
+        int trimestre1 = randomNum.nextInt(10) + 1;
+        int trimestre2 = randomNum.nextInt(10) + 1;
+        int trimestre3 = randomNum.nextInt(10) + 1;
+        int trimestre4 = randomNum.nextInt(10) + 1;
 
-        System.out.println("Nota 1º Semestre: " + sem1);
-        System.out.println("Nota 2º Semestre: " + sem2);
+        System.out.println("Nota 1º Trimestre: " + trimestre1);
+        System.out.println("Nota 2º Trimestre: " + trimestre2);
+        System.out.println("Nota 3º Trimestre: " + trimestre3);
+        System.out.println("Nota 4º Trimestre: " + trimestre4);
 
-        int mediaF = (sem1 + sem2) / 2;
+        int mediaF = (trimestre1 + trimestre2 + trimestre3 + trimestre4) / 4;
         System.out.println("Media Final: " + mediaF);
 
         boolean reprovado = mediaF < 5;
